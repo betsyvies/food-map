@@ -10,10 +10,10 @@
   font-family: 'Lobster', cursive;
 }
   
-/* Styles for container of fondo */
+/* Styles for splash view */
 
 .background {
-  background-image: url("../assets/images/fondo1.jpg");
+  background-image: url("../assets/images/fondo.jpg");
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   background-position: center center;
@@ -30,3 +30,4 @@ h1 {
   font-weight: 800;
   text-align: center;
 }
+
