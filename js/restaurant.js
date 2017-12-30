@@ -15,7 +15,7 @@ $(document).ready(function() {
 
             var $img = $('.restaurants');
           
-            /* Cambiamos los atsributos de las imagenes */
+            /* Cambiamos el atributo src y agregamos los otros atributos a las imagenes */
             $img.eq(i).attr('src', data[comida][restaurant]['image']);
             $img.eq(i).attr('data-title', restaurant);
             $img.eq(i).attr('data-address', data[comida][restaurant]['address']);

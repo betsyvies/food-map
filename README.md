@@ -1,10 +1,10 @@
-#Food Map
+# Food Map
 
-- Esta página le ayudará a buscar los mejores restaurantes creca de usted bajo estos cinco tipos de comida (comida china, comida sana, comida criolla, comida rapida, comida mexicana). Pronto implementaremos más, gracias por su visita esperamos la disfrute.
+- Esta página le ayudará a buscar los mejores restaurantes cerca de usted, bajo estos cinco tipos de comida (comida china, comida sana, comida criolla, comida rapida, comida mexicana). Pronto implementaremos más, gracias por su visita esperamos la disfrute.
 
 ## Objetivo del reto
 
-- El objetivo de esta pagina es filtar a través de un input los restaurantes que se encuentran cerca de ti, esto lo haremos escribiendo uno de los cinco tipos explicando arriba.
+- El objetivo de esta pagina es filtar a través de un input los restaurantes que se encuentran cerca de usted, esto lo haremos escribiendo uno de los cinco tipos explicado arriba.
 
 ## Flujo de la aplicación
 
@@ -25,7 +25,7 @@
 - Comentar el código.
 - Subimos avances a github.
 - Terminar de dar estilo con CSS.
-- Empezamos a trabajar en JS con Jquery, para dar interacción a la página.
+- Empezamos a trabajar en JS utilizando Jquery, para dar interacción a la página.
 - Comentar el código.
 - Subimos avances a github.
 - Cumplimos con el objetivo.
@@ -48,17 +48,17 @@
 
 - [W3School] : https://www.w3schools.com/bootstrap/bootstrap_forms.asp
 
-- [Jquery]: https://oscarotero.com/jquery
+- [Jquery]: https://oscarotero.com/jquery/
 
 ## Imagen 
 
 - Vista Splash
 
-![Foodmap](assets/images/readme/vista-restaurant.png)
+![Foodmap](assets/images/readme/vista-splash.png)
 
 - Vista Restaurant
 
-![Foodmap](assets/images/readme/vista-splash.png) 
+![Foodmap](assets/images/readme/vista-restaurant.png) 
 
 - Filtro para restaurants 
 
