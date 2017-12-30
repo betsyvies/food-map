@@ -97,7 +97,7 @@ var data = {
       'phone': 'Teléfono: 5050000 delivery'
     },
     'Bembos': {
-      'image': '../assets/images/restaurants/comida-rapida/4.jpg',
+      'image': '../assets/images/restaurants/comida-rapida/4.png',
       'address': 'Jockey Plaza, Av. Javier Prado Este 4200 Recomendable para ir con niños - Grupos',
       'phone': 'Teléfono: (01) 7162000 delivery'
     },

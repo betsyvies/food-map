@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#restaurants').keypress(function(event) {
+  $('#input').keypress(function filter(event) {
     if (event.which === 13) {      
       var value = $(this).val();
       event.preventDefault();
@@ -10,22 +10,29 @@ $(document).ready(function() {
           var comida = comidas[i].tipo;  
 
           for (var a = 0; a <= tipos.length; a++) {
-            var restaurant = comidas[i].restaurantsList[a];   
-            console.log(restaurant);
-            
+            var restaurant = comidas[i].restaurantsList[a];     
+
             var $img = $('.restaurants');
-            var $title = $('#title');
-            var $address = $('#address');
-            var $phone = $('phone');
           
-            /* Cambiamos el atributo src de las imagenes */
+            /* Cambiamos los atsributos de las imagenes */
             $img.eq(a).attr('src', data[comida][restaurant]['image']);
-            
-            /* */
+            $img.eq(a).attr('data-title', restaurant);
+            $img.eq(a).attr('data-address', data[comida][restaurant]['address']);
+            $img.eq(a).attr('data-phone', data[comida][restaurant]['phone']);
           }
-        } 
+        }
       }
     }
+  });
+  /* Al darle click a la imagen se mostrará un modal */
+  $('a[data-toggle=modal]').click(function() {
+    var dataTitle = $(this).children().attr('data-title');
+    var dataAddress = $(this).children().attr('data-address');
+    var dataPhone = $(this).children().attr('data-phone');
+            
+    $($(this).data('target') + ' .modal-header h1').text(dataTitle);
+    $($(this).data('target') + ' .modal-body #address').text(dataAddress);
+    $($(this).data('target') + ' .modal-body #phone').text(dataPhone);
   });
 });
 

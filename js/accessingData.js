@@ -11,12 +11,14 @@ comidas = [
 de restaurant y un array de ellos*/
 function getRestaurants() {
   for (var i = 0; i < comidas.length; i++) {
-    /* restaurants por tipo de comida */
+    /* Restaurants por tipo de comida */
     tipos = Object.keys(data[comidas[i].tipo]);
     /* Numero de restaurants */
     comidas[i].restaurants = tipos.length;
     /* Lista de restaurants */
     comidas[i].restaurantsList = tipos;
   }
+  // console.log(comidas[1].restaurantsList[0]);
 };  
 getRestaurants();
+
