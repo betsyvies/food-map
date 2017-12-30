@@ -48,8 +48,6 @@
 
 - [W3School] : https://www.w3schools.com/bootstrap/bootstrap_forms.asp
 
-- [Jquery]: https://oscarotero.com/jquery/
-
 ## Imagen 
 
 - Vista Splash
