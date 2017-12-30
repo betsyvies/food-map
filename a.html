@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+     
+
+     $(document).ready(function() {
+
+     var i=0;
+     var productos=[
+         {"concepto":"producto 1","importe":400},
+         {"concepto":"producto 2","importe":600},
+         {"concepto":"producto 3","importe":800}]
+     
+     $("p").each(function() {
+        // debugger;
+     $(this).data("producto",productos[i]);
+     i++;
+     })
+     
+     $("p").click(function() {
+     
+     $("#detalle").text($(this).data("producto").concepto);
+     
+     });
+     
+     });
+     
+    </script>
+    </head>
+    <body>
+     
+    <p>producto1</p>
+    <p>producto2</p>
+    <p>producto3</p>
+     
+    <div id="detalle">
+     
+    </div>
+     
+    </body>
+    </html>

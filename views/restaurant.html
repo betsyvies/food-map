@@ -39,7 +39,7 @@
     </div>
     <form>
       <div class="input-group">
-        <input id="restaurantes" type="text" class="form-control" name="restaurantes" placeholder="Filtrar restaurantes">
+        <input id="restaurants" type="text" class="form-control" name="restaurants" placeholder="Filtrar restaurantes">
         <span class="input-group-btn">
           <button class="btn btn-default" type="button">
             <i class="glyphicon glyphicon-search"></i>
@@ -52,28 +52,56 @@
   <section class="container-fluid">
     <div class="row">
       <div class="col-xs-12 container-second-section">
-        <div class="col-xs-5 container-img">
-          <img src="../assets/images/restaurants/comida-sana/1.jpg" alt="comida">
+        <div class="col-xs-5 container-img" data-toggle="modal" data-target="#modalLogIn">
+          <img class="restaurants" id="restaurants1" src="../assets/images/restaurants/comida-sana/1.jpg" alt="comida">
         </div>
-        <div class="col-xs-3 container-img">
-          <img src="../assets/images/restaurants/comida-sana/2.jpg" alt="comida">
+        <div class="col-xs-3 container-img" data-toggle="modal" data-target="#modalLogIn">
+          <img class="restaurants" src="../assets/images/restaurants/comida-sana/2.jpg" alt="comida">
         </div>
-        <div class="col-xs-4 container-img">
-          <img src="../assets/images/restaurants/comida-sana/3.jpg" alt="comida">
+        <div class="col-xs-4 container-img" data-toggle="modal" data-target="#modalLogIn">
+          <img class="restaurants" src="../assets/images/restaurants/comida-sana/3.jpg" alt="comida">
         </div>
-        <div class="col-xs-6 container-img">
-          <img src="../assets/images/restaurants/comida-sana/4.jpg" alt="comida">
+        <div class="col-xs-6 container-img" data-toggle="modal" data-target="#modalLogIn">
+          <img class="restaurants" src="../assets/images/restaurants/comida-sana/4.jpg" alt="comida">
         </div>
-        <div class="col-xs-6 container-img">
-          <img src="../assets/images/restaurants/comida-sana/5.jpg" alt="comida">
+        <div class="col-xs-6 container-img" data-toggle="modal" data-target="#modalLogIn">
+          <img class="restaurants" src="../assets/images/restaurants/comida-sana/5.jpg" alt="comida">
         </div>
       </div>
     </div>
   </section>
+  <!-- Modal for Driver -->
+  <div class="modal fade" id="modalLogIn" tabindex="-1" role="dialog" aria-labelledby="modalLogIn">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content background-modal center-block">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h1 id="title"></h1>
+          <img src="../assets/images/map.png" alt="map-modal">
+        </div>
+        <div class="modal-body background-modal-body">
+          <div class="form-group row">
+            <div class="col-xs-6 container-text ">
+              <p id="address"></p>
+            </div>
+            <div class="col-xs-6 container-text ">
+              <p id="phone"></p>
+            </div>
+          </div>
+          <button class="btn btn-default center-block color-button" type="submit">Pedir ahora</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Data Base -->
+  <script src='../js/data.js'></script>
   <!-- Import jQuery and Bootstrap.js -->
   <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../js/restaurant.js"></script>
+  <script type="text/javascript" src='../js/accessingData.js'></script>
 </body>
 
 </html>
