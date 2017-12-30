@@ -18,7 +18,6 @@ function getRestaurants() {
     /* Lista de restaurants */
     comidas[i].restaurantsList = tipos;
   }
-  // console.log(comidas[1].restaurantsList[0]);
 };  
 getRestaurants();
 

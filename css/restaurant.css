@@ -67,6 +67,19 @@ body {
 
 .container-img {
   padding: 0.25em;
+  position: relative;
+}
+
+.title-img {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  width: 96.7%;
+  height: 8.5rem;
+  background: rgba(0,0,0,0.6);
+  transform: translateY(-50%);
 }
 
 [alt="comida"] {
@@ -84,6 +97,10 @@ i {
 .background-modal {
   width: 90%;
   top: 10rem;
+}
+
+.background-modal span {
+  color: #000;
 }
 
 .background-modal h1 {

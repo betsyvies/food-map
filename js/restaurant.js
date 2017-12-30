@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#input').keypress(function filter(event) {
+  $('#input').keypress(function(event) {
     if (event.which === 13) {      
       var value = $(this).val();
       event.preventDefault();
@@ -24,6 +24,14 @@ $(document).ready(function() {
       }
     }
   });
+  /* Eventos para mostrar información del restaurante */
+  /* Al pasar el mouse por la imagen se mostrará el valor de data-title */
+  $('a[data-toggle=modal]').mouseover(function() {
+    var dataTitle = $(this).children('img').attr('data-title'); 
+    
+    $(this).children('p').text(dataTitle).addClass('title-img');
+  });
+
   /* Al darle click a la imagen se mostrará un modal */
   $('a[data-toggle=modal]').click(function() {
     var dataTitle = $(this).children().attr('data-title');
