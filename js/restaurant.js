@@ -1,24 +1,25 @@
 $(document).ready(function() {
   $('#input').keypress(function(event) {
+    /* Validamos si el evento escucha a la tecla enter */
     if (event.which === 13) {      
       var value = $(this).val();
       event.preventDefault();
 
       /* Validamos el texto y mostramos las imagenes */
-      for (var i = 0; i <= comidas.length; i++) {
-        if (value === comidas[i]['tipo']) {
-          var comida = comidas[i].tipo;  
+      for (var index = 0; index <= comidas.length; index++) {
+        if (value === comidas[index]['tipo']) {
+          var comida = comidas[index].tipo;  
 
-          for (var a = 0; a <= tipos.length; a++) {
-            var restaurant = comidas[i].restaurantsList[a];     
+          for (var i = 0; i <= tipos.length; i++) {
+            var restaurant = comidas[index].restaurantsList[i];     
 
             var $img = $('.restaurants');
           
             /* Cambiamos los atsributos de las imagenes */
-            $img.eq(a).attr('src', data[comida][restaurant]['image']);
-            $img.eq(a).attr('data-title', restaurant);
-            $img.eq(a).attr('data-address', data[comida][restaurant]['address']);
-            $img.eq(a).attr('data-phone', data[comida][restaurant]['phone']);
+            $img.eq(i).attr('src', data[comida][restaurant]['image']);
+            $img.eq(i).attr('data-title', restaurant);
+            $img.eq(i).attr('data-address', data[comida][restaurant]['address']);
+            $img.eq(i).attr('data-phone', data[comida][restaurant]['phone']);
           }
         }
       }
@@ -41,6 +42,11 @@ $(document).ready(function() {
     $($(this).data('target') + ' .modal-header h1').text(dataTitle);
     $($(this).data('target') + ' .modal-body #address').text(dataAddress);
     $($(this).data('target') + ' .modal-body #phone').text(dataPhone);
+  });
+
+  /* Al dar click en el button close se regresará a la vista principal */
+  $('.modal-header button').click(function() {
+    window.location.assign('../index.html');
   });
 });
 
