@@ -1,5 +1,8 @@
 $(document).ready(function() {
-  $('#input').on('keyup', function(event) {
+  var $input = $('#input');
+  var $dataModal = $('a[data-toggle=modal]');
+
+  $input.on('keyup', function(event) {
     /* Validamos si el valor del input es igual a un valor del array de objetos comidas */    
     var value = $(this).val();
     event.preventDefault();
@@ -25,7 +28,7 @@ $(document).ready(function() {
   });
   /* Eventos para mostrar información del restaurante */
   /* Al pasar el mouse por la imagen se mostrará el valor de data-title */
-  $('a[data-toggle=modal]')
+  $dataModal
     .on('mouseover', function() {
       var dataTitle = $(this).children('img').attr('data-title'); 
       
@@ -41,7 +44,7 @@ $(document).ready(function() {
     });
 
   /* Al darle click a la imagen se mostrará un modal */
-  $('a[data-toggle=modal]').on('click', function() {
+  $dataModal.on('click', function() {
     var dataTitle = $(this).children().attr('data-title');
     var dataAddress = $(this).children().attr('data-address');
     var dataPhone = $(this).children().attr('data-phone');
