@@ -78,8 +78,8 @@ body {
   top: 50%;
   width: 96.7%;
   height: 8.5rem;
-  background: rgba(0,0,0,0.6);
   transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
 }
 
 [alt="comida"] {
@@ -96,7 +96,7 @@ i {
 
 .background-modal {
   width: 90%;
-  top: 10rem;
+  top: 3.5rem;
 }
 
 .background-modal span {

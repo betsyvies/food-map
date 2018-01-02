@@ -1,6 +1,6 @@
 # Food Map
 
-- Esta página le ayudará a buscar los mejores restaurantes cerca de usted, bajo estos cinco tipos de comida (comida china, comida sana, comida criolla, comida rapida, comida mexicana). Pronto implementaremos más, gracias por su visita esperamos la disfrute.
+- Esta página le ayudará a buscar los mejores restaurantes cerca de usted, bajo estos cinco tipos de comida (comida china,comida sana, comida criolla, comida rapida, comida mexicana). Pronto implementaremos más, gracias por su visita esperamos la disfrute.
 
 ## Objetivo del reto
 
@@ -12,7 +12,7 @@
 - En la vista principal se muestran todos los restaurantes "cerca de ti" junto con el input para filtrar.
 - Evento mouseover a las imágenes.
 - Al seleccionar alguno de los restaurantes, se mostrará la información de este a través de un modal.
-- Una vez cerrado el modal vuelve a la vista principal.
+- Una vez cerrado el modal vuelve a la vista principal, para que usted puede ver la información de cada uno y tome una decisión.
 
 ## Flujo de trabajo
 
