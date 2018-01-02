@@ -1,26 +1,24 @@
 $(document).ready(function() {
-  $('#input').on('keypress', function(event) {
-    /* Validamos si el evento escucha a la tecla enter */
-    if (event.which === 13) {      
-      var value = $(this).val();
-      event.preventDefault();
+  $('#input').on('keyup', function(event) {
+    /* Validamos si el valor del input es igual a un valor del array de objetos comidas */    
+    var value = $(this).val();
+    event.preventDefault();
 
-      /* Validamos el texto y mostramos las imagenes */
-      for (var index = 0; index <= comidas.length; index++) {
-        if (value === comidas[index]['tipo']) {
-          var comida = comidas[index].tipo;  
+    /* Validamos el texto y mostramos las imagenes */
+    for (var index = 0; index <= comidas.length; index++) {
+      if (value === comidas[index]['tipo']) {
+        var comida = comidas[index].tipo;  
 
-          for (var i = 0; i <= tipos.length; i++) {
-            var restaurant = comidas[index].restaurantsList[i];     
+        for (var i = 0; i <= tipos.length; i++) {
+          var restaurant = comidas[index].restaurantsList[i];     
 
-            var $img = $('.restaurants');
+          var $img = $('.restaurants');
           
-            /* Cambiamos el atributo src y agregamos los otros atributos a las imagenes */
-            $img.eq(i).attr('src', data[comida][restaurant]['image']);
-            $img.eq(i).attr('data-title', restaurant);
-            $img.eq(i).attr('data-address', data[comida][restaurant]['address']);
-            $img.eq(i).attr('data-phone', data[comida][restaurant]['phone']);
-          }
+          /* Cambiamos el atributo src y agregamos los otros atributos a las imagenes */
+          $img.eq(i).attr('src', data[comida][restaurant]['image']);
+          $img.eq(i).attr('data-title', restaurant);
+          $img.eq(i).attr('data-address', data[comida][restaurant]['address']);
+          $img.eq(i).attr('data-phone', data[comida][restaurant]['phone']);
         }
       }
     }
