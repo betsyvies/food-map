@@ -31,13 +31,15 @@ $(document).ready(function() {
     .on('mouseover', function() {
       var dataTitle = $(this).children('img').attr('data-title'); 
       
-      $(this).children('p').text(dataTitle).addClass('title-img');
+      $(this).children('p').text(dataTitle);
+      $(this).children('img').addClass('container-hover');
     })
   
     .on('mouseout', function() {
       var dataTitle = $(this).children('img').attr('data-title'); 
         
-      $(this).children('p').text('').removeClass('title-img');
+      $(this).children('p').text('');
+      $(this).children('img').removeClass('container-hover');
     });
 
   /* Al darle click a la imagen se mostrará un modal */
